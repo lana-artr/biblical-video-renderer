@@ -1,0 +1,14 @@
+{
+  "name": "biblical-video-renderer",
+  "version": "1.0.0",
+  "description": "FFmpeg video renderer for biblical YouTube automation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
