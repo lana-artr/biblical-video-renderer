@@ -82,7 +82,7 @@ app.post('/render', async (req, res) => {
 
     // 3. Build FFmpeg command
     // Ken Burns effect: slow zoom from 100% to 110% over the duration
-    const zoompan = `scale=1920:1080,zoompan=z='min(zoom+0.0008,1.1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${duration * 25}:s=1920x1080:fps=25`;
+   const zoompan = `scale=1920:1080`;
 
     // Overlay text (bold, left side, ~40% width)
     const escapedText = escapeText(overlayText);
